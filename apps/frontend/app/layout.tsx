@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import Header from "../components/layout/header.component"
-import { pop_normal } from "../utils/font"
+import { quicksand } from "../utils/font"
 import Footer from "../components/layout/footer.component"
 
 export const metadata: Metadata = {
@@ -16,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pop_normal.className}`}>
+      <body className={`${quicksand.className} antialiased`}>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )
