@@ -17,20 +17,20 @@ type ImageContainerWithScale = CommonImageContainerTypes & {
 
 type ImageContainerTypes = ImageContainerWithScale | ImageContainerWithSizes
 
-const ImageContainer: React.FC<ImageContainerTypes> = ({ imgSrc, imgAlt, size, scale, className, children }) => {
+const ImageContainer: React.FC<ImageContainerTypes> = ({ imgSrc, imgAlt, size, scale, className = '', children }) => {
     const baseStyle = `flex items-center justify-center`
     const customStyle = className
 
     if (!scale) {
         switch (size) {
             case 'small':
-                scale = 40
+                scale = 70
                 break
             case 'medium':
                 scale = 220
                 break
             case 'large':
-                scale = 420
+                scale = 440
                 break
             default:
                 scale = 0

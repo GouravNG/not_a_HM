@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.styled-toggles summary::-webkit-details-marker {
+    display: none;
+}
+
+.styled-toggles details[open] summary span {
+    transform: rotate(180deg);
+}
+
+.styled-toggles details[open] summary {
+    @apply text-hmred;
+}
