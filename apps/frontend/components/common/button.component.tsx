@@ -1,6 +1,6 @@
 interface ButtonTypes extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     varient: 'BlackOne'
-    children: React.ReactNode
+    children?: React.ReactNode
     className?: string
     buttonText: string
 }

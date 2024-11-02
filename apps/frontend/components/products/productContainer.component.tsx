@@ -1,28 +1,44 @@
-import { IconHeart } from "@tabler/icons-react"
-import Image from "next/image"
+type ProductImageType = {
+    imgSrc: string
+    imgAlt: string
+}
 
-const ProductContainer = () => {
-  return (
-    <>
-      <div className="py-3 relative w-full flex flex-col items-start justify-start">
-        <div className="flex items-start justify-end">
-          <Image src={"/shirt.jpg"} alt="shirt" height={100} width={180} className="md:w-[400]" />
-          <div className="absolute float-right p-1">
-            <IconHeart stroke={.5} color="black" fill="white"/>
-          </div>
-        </div>
-        <div className="py-1">
-          <p className="text-sm font-semibold">Loose Fit Shirt</p>
-          <p className="text-sm">Rs.1499.00</p>
-          <div className="flex gap-1 mt-1 items-center">
-            <div className="border bg-red-400 border-black w-2 h-2 p-1"></div>
-            <div className="border bg-red-400 border-black w-2 h-2 p-1"></div>
-            <div className="border bg-red-400 border-black w-2 h-2 p-1"></div>
-            <p className="text-sm">+2</p>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+type ProductDetailsType = {
+    productName: string
+    productPrice: string
+    productImage: ProductImageType
+    productSKU: string[]
+}
+type ProductContainerTypes = {
+    productDetail: ProductDetailsType
+}
+
+import ImageContainer from '../common/imageContainer.component'
+import Favorite from '../common/favorite.component'
+import ProductDescrption from '../common/productDesc.component'
+import SKUColorBox from '../common/skuColorsBox.component'
+
+const ProductContainer: React.FC<ProductContainerTypes> = ({ productDetail }) => {
+    return (
+        <>
+            <div className="flex flex-col items-center justify-center">
+                <ImageContainer
+                    imgSrc={productDetail.productImage.imgSrc}
+                    imgAlt={productDetail.productImage.imgAlt}
+                    size="medium"
+                >
+                    <Favorite position="top-right" />
+                </ImageContainer>
+                <div className="w-full">
+                    <ProductDescrption
+                        productName={productDetail.productName}
+                        productPrice={productDetail.productPrice}
+                        style="PLP"
+                    />
+                </div>
+                <SKUColorBox skuColor={productDetail.productSKU} />
+            </div>
+        </>
+    )
 }
 export default ProductContainer
