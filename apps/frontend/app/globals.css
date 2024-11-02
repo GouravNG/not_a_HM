@@ -13,3 +13,7 @@
 .styled-toggles details[open] summary {
     @apply text-hmred;
 }
+
+.make-it-scroll {
+    @apply flex-shrink-0 text-nowrap;
+}
