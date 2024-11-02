@@ -25,7 +25,7 @@ const ProductContainer: React.FC<ProductContainerTypes> = ({ productDetail }) =>
                 <ImageContainer
                     imgSrc={productDetail.productImage.imgSrc}
                     imgAlt={productDetail.productImage.imgAlt}
-                    size="medium"
+                    size="large"
                 >
                     <Favorite position="top-right" />
                 </ImageContainer>
