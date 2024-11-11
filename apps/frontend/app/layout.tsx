@@ -20,7 +20,7 @@ export default function RootLayout({
             <body className={`${quicksand.className} antialiased relative`}>
                 <AbsoluteContainer />
                 <Header />
-                {children}
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>
