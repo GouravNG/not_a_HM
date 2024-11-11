@@ -2,15 +2,15 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { prettyJSON } from 'hono/pretty-json'
 
+import type { SubCategoryTypes } from '@repo/types/types'
+
 import mainCategories from './dummyData/allCategory.json'
-import allCategories from './dummyData/merch.json'
+import allCategoriesJSON from './dummyData/merch.json'
+
+const allCategories: SubCategoryTypes = allCategoriesJSON
 
 const app = new Hono()
 app.use('*', prettyJSON())
-
-app.get('/', (c) => {
-    return c.text('Hello Hono!')
-})
 
 app.get('/getAllMainCategories', (c) => {
     return c.json(mainCategories)
