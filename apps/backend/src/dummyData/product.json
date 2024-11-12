@@ -1,0 +1,1478 @@
+[
+    {
+      "id": "10001",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100012",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCC99",
+        "#CCCCFF",
+        "#FFCCCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100011",
+          "skuColorName": "Peach",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        },
+        {
+          "skuId": "100012",
+          "skuColorName": "Lavender",
+          "skuFit": 4,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599,
+            "memberPrice": 499
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10002",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100021",
+      "parentCategory": "",
+      "colorCodes": [
+        "#99CCFF",
+        "#CCFFCC",
+        "#FFCCFF",
+        "#CCCCCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100021",
+          "skuColorName": "Light Blue",
+          "skuFit": 3,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299,
+            "memberPrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        },
+        {
+          "skuId": "100022",
+          "skuColorName": "Mint",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10003",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100031",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCFFFF",
+        "#FFCCCC",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100031",
+          "skuColorName": "Light Cyan",
+          "skuFit": 2,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1799,
+            "salePrice": 1499,
+            "memberPrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        },
+        {
+          "skuId": "100032",
+          "skuColorName": "Pink",
+          "skuFit": 10,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1799,
+            "salePrice": 1499
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10004",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100041",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCFFCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100041",
+          "skuColorName": "Blush",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10005",
+      "name": "2-piece Loose Fit Set",
+      "defaultSkuId": "100051",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCFFFF",
+        "#FFCCCC",
+        "#CCCCFF",
+        "#99CCFF",
+        "#FFCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100051",
+          "skuColorName": "Seafoam",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "skuPrice": {
+            "retailPrice": 2499,
+            "salePrice": 2299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10006",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100061",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCCC",
+        "#CCFFCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100061",
+          "skuColorName": "Blue",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1599,
+            "salePrice": 1399
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10007",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100071",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCFFFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100071",
+          "skuColorName": "Peach",
+          "skuFit": 4,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10008",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100082",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCFFCC",
+        "#FFCCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100081",
+          "skuColorName": "Mint",
+          "skuFit": 8,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        },
+        {
+          "skuId": "100082",
+          "skuColorName": "Lavender",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10009",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100091",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCFF",
+        "#FFCCCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100091",
+          "skuColorName": "Blue",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10010",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100101",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100101",
+          "skuColorName": "Coral",
+          "skuFit": 3,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299,
+            "memberPrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10011",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100111",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100111",
+          "skuColorName": "Peach",
+          "skuFit": 4,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10012",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100121",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCFFCC",
+        "#CCCCFF",
+        "#FFCCCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100121",
+          "skuColorName": "Mint",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10013",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100131",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCFF",
+        "#CCFFCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100131",
+          "skuColorName": "Blue",
+          "skuFit": 9,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1599,
+            "salePrice": 1399
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10014",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100141",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100141",
+          "skuColorName": "Pink",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299,
+            "memberPrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10015",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100151",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCCC",
+        "#FFCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100151",
+          "skuColorName": "Lavender",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10016",
+      "name": "Regular Fit Hoodie",
+      "defaultSkuId": "100161",
+      "parentCategory": "",
+      "colorCodes": [
+        "#99CCFF",
+        "#FFCCCC",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100161",
+          "skuColorName": "Sky Blue",
+          "skuFit": 8,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10017",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100171",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#CCCCFF",
+        "#FFCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100171",
+          "skuColorName": "Peach",
+          "skuFit": 4,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10018",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100181",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCCC",
+        "#FFCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100181",
+          "skuColorName": "Mint",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10019",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100191",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCCCFF",
+        "#CCFFCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100191",
+          "skuColorName": "Lavender",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10020",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100201",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100201",
+          "skuColorName": "Coral",
+          "skuFit": 4,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10021",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100211",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCFFCC",
+        "#FFCCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100211",
+          "skuColorName": "Peach",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10022",
+      "name": "Regular Fit Hoodie",
+      "defaultSkuId": "100221",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100221",
+          "skuColorName": "Mint",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10023",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100231",
+      "parentCategory": "",
+      "colorCodes": [
+        "#CCCCFF",
+        "#FFCCCC",
+        "#FFCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100231",
+          "skuColorName": "Lavender",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10024",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100241",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100241",
+          "skuColorName": "Coral",
+          "skuFit": 8,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10025",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100251",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100251",
+          "skuColorName": "Sky Blue",
+          "skuFit": 9,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1599,
+            "salePrice": 1399
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10026",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100261",
+      "parentCategory": "",
+      "colorCodes": [
+        "#99CCFF",
+        "#CCCCFF",
+        "#FFCCCC"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100261",
+          "skuColorName": "Peach",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 649
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10027",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100271",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100271",
+          "skuColorName": "Pink",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10028",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100281",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100281",
+          "skuColorName": "Lavender",
+          "skuFit": 8,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1799,
+            "salePrice": 1599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10029",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100291",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100291",
+          "skuColorName": "Coral",
+          "skuFit": 6,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10030",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100301",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100301",
+          "skuColorName": "Sky Blue",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10031",
+      "name": "Loose Fit Sweatshirt",
+      "defaultSkuId": "100311",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100311",
+          "skuColorName": "Mint",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 799,
+            "salePrice": 649
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10032",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100321",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCFF",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100321",
+          "skuColorName": "Lavender",
+          "skuFit": 8,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10033",
+      "name": "THERMOLITE Hoodie",
+      "defaultSkuId": "100331",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100331",
+          "skuColorName": "Sky Blue",
+          "skuFit": 9,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1799,
+            "salePrice": 1599
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10034",
+      "name": "Loose Fit Hoodie",
+      "defaultSkuId": "100341",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#99CCFF",
+        "#CCCCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100341",
+          "skuColorName": "Peach",
+          "skuFit": 5,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1299,
+            "salePrice": 1099
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "10035",
+      "name": "Loose Fit Zip-up",
+      "defaultSkuId": "100351",
+      "parentCategory": "",
+      "colorCodes": [
+        "#FFCCCC",
+        "#CCCCFF",
+        "#99CCFF"
+      ],
+      "skuInfo": [
+        {
+          "skuId": "100351",
+          "skuColorName": "Coral",
+          "skuFit": 7,
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "skuPrice": {
+            "retailPrice": 1499,
+            "salePrice": 1299
+          },
+          "images": {
+            "mainImageSrc": "/shirt.jpg",
+            "altImages": [
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg",
+              "./shirt.jpg"
+            ]
+          }
+        }
+      ]
+    }
+  ]
