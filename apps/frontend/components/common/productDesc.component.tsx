@@ -1,6 +1,6 @@
 type ProductDescrptionTypes = {
     productName: string
-    productPrice: string
+    productPrice: number
     className?: string
     style?: 'PDP' | 'PLP'
 }

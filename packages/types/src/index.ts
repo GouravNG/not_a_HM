@@ -24,7 +24,7 @@ type SkuImagestype = {
     altImages: string[]
 }
 
-type SkuInfoType = {
+export type SkuInfoType = {
     skuId: string
     skuColorName: string
     skuFit: number
@@ -37,6 +37,7 @@ export type ProductDataType = {
     id: string
     name: string
     parentCategory: string
+    defaultSkuId: string
     colorCodes: string[]
     skuInfo: SkuInfoType[]
 }
