@@ -8,6 +8,7 @@ import type { SubCategoryTypes, ProductDataType } from '@repo/types/types'
 import mainCategories from './dummyData/allCategory.json'
 import allCategoriesJSON from './dummyData/merch.json'
 import allProductDataJSON from './dummyData/product.json'
+import getProductById from './controller/getProductById.js'
 
 const allCategories: SubCategoryTypes = allCategoriesJSON
 const allProducts: ProductDataType[] = allProductDataJSON
@@ -46,6 +47,10 @@ app.get('/getAllProducts', (c) => {
 })
 
 //get Product by id
+app.get('/getProductById/:productId', (c) => {
+    const productId = c.req.param('productId')
+    return c.json(getProductById(productId, allProducts))
+})
 
 //get categoryDetails by product id
 
