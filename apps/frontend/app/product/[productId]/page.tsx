@@ -1,6 +1,6 @@
 import { IconBuildingStore, IconInfoCircle, IconRuler2, IconShoppingBag } from '@tabler/icons-react'
 import BreadCrumbs from '../../../components/common/breadCrumbs.component'
-import { alternativeImage, breadCrumb, DropDownData, mainImage, skuData, SKUSizeData } from '../../../dummyData'
+import { breadCrumb, DropDownData } from '../../../dummyData'
 import ImageContainer from '../../../components/common/imageContainer.component'
 import Favorite from '../../../components/common/favorite.component'
 import ProductDescrption from '../../../components/common/productDesc.component'
@@ -12,20 +12,26 @@ import Dropdown from '../../../components/common/dropdown.component'
 import FitGraph from '../../../components/common/fitGraph.component'
 import CustomButton from '../../../components/common/button.component'
 
-const PDP = () => {
+import type { ProductDataType, SkuInfoType } from '@repo/types/types'
+import { makeGetRequest } from '@/utils/httpRequest'
+import { getSKUInfo } from '@/utils/getSKUInfo'
+
+const PDP = async ({ params }: { params: { productId: string } }) => {
+    const ProductInfo: ProductDataType = await makeGetRequest(`/getProductById/${params.productId}`)
+    const skuInfo: SkuInfoType = getSKUInfo(ProductInfo)!
     return (
         <div className="px-4">
             <BreadCrumbs breadCrumb={breadCrumb} />
             <div className="md:flex flex-row-reverse w-full ">
-                <div className="md:hidden flex justify-center items-center my-4">
-                    <ImageContainer imgSrc={mainImage.imageSrc} imgAlt={mainImage.imgAlt} size="large">
+                <div className="md:hidden flex justify-center items-center my-4 aa">
+                    <ImageContainer imgSrc={skuInfo.images.mainImageSrc} imgAlt={ProductInfo.name} size="large">
                         <Favorite position="top-right" />
                     </ImageContainer>
                 </div>
                 <div className="pt-6 w-full md:w-1/3 md:px-4">
-                    <ProductDescrption productName="Regular Fit Suite trouser" productPrice="Rs. 2,299.00" />
-                    <SKUSelection SKUData={skuData} />
-                    <SelectSize SKUSizeList={SKUSizeData} />
+                    <ProductDescrption productName={ProductInfo.name} productPrice={skuInfo.skuPrice.retailPrice} />
+                    <SKUSelection SKUData={ProductInfo.skuInfo} />
+                    <SelectSize SKUSizeList={skuInfo.sizes} />
                     <TextWithIcon text="Size Guide" className="underline py-4 text-sm">
                         <IconRuler2 stroke={1} width={20} height={20} />
                     </TextWithIcon>
@@ -52,8 +58,8 @@ const PDP = () => {
                     </div>
                 </div>
                 <div className="md:w-2/3 md:grid grid-cols-2 py-4 gap-4 items-center justify-center">
-                    {alternativeImage.map((i, index) => {
-                        return <ImageContainer imgAlt={i.imgAlt} imgSrc={i.imgSrc} key={index} size="large" />
+                    {skuInfo.images.altImages.map((i, index) => {
+                        return <ImageContainer imgAlt={ProductInfo.name} imgSrc={i} key={index} size="large" />
                     })}
                 </div>
             </div>

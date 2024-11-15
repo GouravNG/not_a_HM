@@ -5,6 +5,7 @@ import SKUColorBox from '../common/skuColorsBox.component'
 
 import { ProductDataType } from '@repo/types/types'
 import getDefaultSkuInfo from '@/utils/getDefaultSku'
+import getRedirectLink from '@/utils/getRedirectLink'
 
 type ProductContainerTypes = {
     productDetail: ProductDataType
@@ -14,13 +15,15 @@ const ProductContainer: React.FC<ProductContainerTypes> = ({ productDetail }) =>
     return (
         <>
             <div className="flex flex-col items-center justify-center">
-                <ImageContainer
-                    imgSrc={defaultSkuInfo[0]?.images.mainImageSrc ?? ''}
-                    imgAlt={productDetail.name}
-                    size="large"
-                >
-                    <Favorite position="top-right" />
-                </ImageContainer>
+                <a href={getRedirectLink(`/product/${productDetail.id}`)} title={productDetail.name}>
+                    <ImageContainer
+                        imgSrc={defaultSkuInfo[0]?.images.mainImageSrc ?? ''}
+                        imgAlt={productDetail.name}
+                        size="large"
+                    >
+                        <Favorite position="top-right" />
+                    </ImageContainer>
+                </a>
                 <div className="w-full">
                     <ProductDescrption
                         productName={productDetail.name}

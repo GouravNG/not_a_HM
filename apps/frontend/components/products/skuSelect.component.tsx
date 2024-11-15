@@ -2,23 +2,17 @@
 
 import { useState } from 'react'
 import ImageContainer from '../common/imageContainer.component'
-import { skuData } from '../../dummyData'
-
-type SKUDataType = {
-    skuName: string
-    imgSrc: string
-    imgAlt: string
-}
+import { SkuInfoType } from '@repo/types/types'
 
 type SKUSelectionType = {
-    SKUData: SKUDataType[]
+    SKUData: SkuInfoType[]
 }
 
 const SKUSelection: React.FC<SKUSelectionType> = ({ SKUData }) => {
-    const [skuName, setSkuName] = useState<string>(SKUData[0]?.skuName ?? '')
+    const [skuName, setSkuName] = useState<string>(SKUData[0]?.skuColorName || '')
 
     const handleSKUSelection = (index: number) => {
-        setSkuName(skuData[index]?.skuName || '')
+        setSkuName(SKUData[index]?.skuColorName || '')
     }
 
     return (
@@ -28,7 +22,7 @@ const SKUSelection: React.FC<SKUSelectionType> = ({ SKUData }) => {
                 {SKUData.map((i, index) => {
                     return (
                         <div key={index} onClick={() => handleSKUSelection(index)} className={`w-fit flex-shrink-0`}>
-                            <ImageContainer imgSrc={i.imgSrc} imgAlt={i.imgAlt} size="small" />
+                            <ImageContainer imgSrc={i.images.mainImageSrc} imgAlt={i.skuColorName} size="small" />
                         </div>
                     )
                 })}
