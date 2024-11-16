@@ -2,6 +2,7 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { prettyJSON } from 'hono/pretty-json'
 import getPaginatedData from './controller/paginationlogic.js'
+import { cors } from 'hono/cors'
 
 import type { SubCategoryTypes, ProductDataType } from '@repo/types/types'
 
@@ -14,6 +15,7 @@ const allCategories: SubCategoryTypes = allCategoriesJSON
 const allProducts: ProductDataType[] = allProductDataJSON
 
 const app = new Hono()
+app.use('*', cors())
 app.use('*', prettyJSON())
 
 app.get('/getAllMainCategories', (c) => {
