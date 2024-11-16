@@ -1,16 +1,16 @@
-const API_DOMAIN = process.env.API_DOMAIN ?? ''
+const API_DOMAIN = process.env.NEXT_PUBLIC_API_DOMAIN ?? ''
 
 export const makeGetRequest = async (requestURL: string) => {
     try {
         const data = await fetch(`${API_DOMAIN}${requestURL}`)
-        return await data.json()
+        if (data.ok) {
+            return await data.json()
+        } else {
+            throw new Error('HTTP error!!')
+        }
     } catch (e) {
         if (e instanceof Error) {
-            console.log(e.message)
-            return {
-                code: '500',
-                message: 'Something went wrong!!',
-            }
+            throw new Error('Something went wrong')
         }
     }
 }
