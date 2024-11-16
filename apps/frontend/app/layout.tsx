@@ -4,6 +4,7 @@ import Header from '../components/layout/header.component'
 import { quicksand } from '../utils/font'
 import Footer from '../components/layout/footer.component'
 import { AbsoluteContainer } from '../components/common/absolute.component'
+import TanStackProvider from '@/utils/tanstackProvider'
 
 export const metadata: Metadata = {
     title: 'H&M | Online Fashion',
@@ -18,10 +19,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${quicksand.className} antialiased relative`}>
-                <AbsoluteContainer />
-                <Header />
-                <main>{children}</main>
-                <Footer />
+                <TanStackProvider>
+                    <AbsoluteContainer />
+                    <Header />
+                    <main>{children}</main>
+                    <Footer />
+                </TanStackProvider>
             </body>
         </html>
     )
