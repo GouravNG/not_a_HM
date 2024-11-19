@@ -1,23 +1,20 @@
 'use client'
 
-import { useState } from 'react'
 import ImageContainer from '../common/imageContainer.component'
 import { SkuInfoType } from '@repo/types/types'
+import useProductStore from '@/stores/product.store'
 
 type SKUSelectionType = {
     SKUData: SkuInfoType[]
 }
 
 const SKUSelection: React.FC<SKUSelectionType> = ({ SKUData }) => {
-    const [skuName, setSkuName] = useState<string>(SKUData[0]?.skuColorName || '')
-
-    const handleSKUSelection = (index: number) => {
-        setSkuName(SKUData[index]?.skuColorName || '')
-    }
+    const { setSkuInfo, skuInfo } = useProductStore()
+    const handleSKUSelection = (index: number) => SKUData[index] && setSkuInfo(SKUData[index])
 
     return (
         <div className="w-full">
-            <p className="text-center text-sm py-4">{skuName}</p>
+            <p className="text-center text-sm py-4">{skuInfo?.skuColorName}</p>
             <div className="w-full flex gap-4 items-center justify-start md:grid md:grid-cols-5  md:justify-center overflow-x-auto md:flex-wrap">
                 {SKUData.map((i, index) => {
                     return (
