@@ -42,7 +42,11 @@ const ProductDescription: React.FC<ProductDescriptionTypes> = ({ productId }) =>
                     </ImageContainer>
                 </div>
                 <div className="pt-6 w-full md:w-1/3 md:px-4">
-                    <ProductDescrption productName={ProductInfo.name} productPrice={skuInfo.skuPrice.salePrice} />
+                    <ProductDescrption
+                        productName={ProductInfo.name}
+                        productPrice={skuInfo.skuPrice.salePrice}
+                        memberPrice={skuInfo.skuPrice?.memberPrice}
+                    />
                     <SKUSelection SKUData={ProductInfo.skuInfo} />
                     <SelectSize SKUSizeList={skuInfo.sizes} />
                     <TextWithIcon text="Size Guide" className="underline py-4 text-sm">
