@@ -12,7 +12,7 @@ import ScrollableConatainer from '../../../components/common/scrollableContainer
 import { makeGetRequest } from '@/utils/httpRequest'
 import { PaginatedDataTypes } from '@repo/types/types'
 
-export const PLP = async ({ searchParams }: { params: unknown; searchParams: { page: string; size: string } }) => {
+const PLP = async ({ searchParams }: { params: unknown; searchParams: { page: string; size: string } }) => {
     const products: PaginatedDataTypes = await makeGetRequest(
         `/getAllProducts?page=${searchParams.page ?? 1}&size=${searchParams.size ?? 12}`,
     )

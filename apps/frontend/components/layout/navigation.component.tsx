@@ -1,8 +1,9 @@
 import { makeGetRequest } from '@/utils/httpRequest'
-
+import type { MainCateogryTypes } from '@repo/types/types'
 const Navigation = async () => {
-    const mainCategory: { categories: string[] } = await makeGetRequest('/getAllMainCategories')
-    const categoryData: unknown = await Promise.all(
+    const mainCategory: { categories: MainCateogryTypes } = await makeGetRequest('/getAllMainCategories')
+    const categoryData: any = await Promise.all(
+        //TODO: Fix any
         mainCategory?.categories.map(async (key) => {
             return await makeGetRequest(`/getAllMerchData/${key}`)
         }),
@@ -23,9 +24,11 @@ const Navigation = async () => {
                                         <li key={index} className="py-1 flex flex-col gap-2 items-start justify-center">
                                             <b>{subCategoryHeading}</b>
                                             <ul className="text-sm">
-                                                {subCategoryData[subCategoryHeading]?.map((subCategory, index) => {
-                                                    return <li key={index}>{subCategory}</li>
-                                                })}
+                                                {subCategoryData[subCategoryHeading]?.map(
+                                                    (subCategory: any, index: number) => {
+                                                        return <li key={index}>{subCategory}</li>
+                                                    },
+                                                )}
                                             </ul>
                                         </li>
                                     )
