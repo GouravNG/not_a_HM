@@ -14,7 +14,7 @@ const ProductContainer: React.FC<ProductContainerTypes> = ({ productDetail }) =>
     return (
         <>
             <div className="flex flex-col items-center justify-center">
-                <a href={getRedirectLink(`/product/${productDetail.id}`)} title={productDetail.name}>
+                <a href={getRedirectLink(`/test/product/${productDetail.id}`)} title={productDetail.name}>
                     <ImageContainer
                         imgSrc={defaultSkuInfo[0]?.images.mainImageSrc ?? ''}
                         imgAlt={productDetail.name}
