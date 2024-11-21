@@ -1,5 +1,5 @@
-import ProductDescription from '@/components/templates/pdp.component'
-import BreadCrumbs from '@/components/common/breadCrumbs.component'
+import BreadCrumbs from '@/components/atom/breadCrumbs.component'
+import ProductDescription from '@/components/templates/pdp.component'   
 import { breadCrumb } from '@/dummyData'
 import { Suspense } from 'react'
 

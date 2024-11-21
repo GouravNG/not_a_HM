@@ -1,8 +1,8 @@
 'use client'
 
-import ImageContainer from '../common/imageContainer.component'
 import { SkuInfoType } from '@repo/types/types'
 import useProductStore from '@/stores/product.store'
+import ImageContainer from './imageContainer.component'
 
 type SKUSelectionType = {
     SKUData: SkuInfoType[]

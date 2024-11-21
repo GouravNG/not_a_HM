@@ -1,9 +1,10 @@
 import { IconMenu2 } from '@tabler/icons-react'
-import ListLinks from '../common/listlink.component'
-import SearchBar from '../common/search.component'
-import LOGO from './logo.component'
-import PrimaryFunctions from './primaryFunction.component'
-import Navigation from './navigation.component'
+import LOGO from '../atom/logo.component'
+import ListLinks from '../molecule/listlink.component'
+import PrimaryFunctions from '../molecule/primaryFunction.component'
+import SearchBar from '../molecule/search.component'
+import Navigation from '../organism/navigation.component'
+
 
 const Header = () => {
     return (
