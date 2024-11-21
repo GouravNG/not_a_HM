@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '../components/layout/header.component'
 import { quicksand } from '../utils/font'
-import Footer from '../components/layout/footer.component'
-import { AbsoluteContainer } from '../components/common/absolute.component'
 import TanStackProvider from '@/utils/tanstackProvider'
+import { AbsoluteContainer } from '@/components/molecule/absolute.component'
+import Footer from '@/components/templates/footer.component'
+import Header from '@/components/templates/header.component'
 
 export const metadata: Metadata = {
     title: 'H&M | Online Fashion',

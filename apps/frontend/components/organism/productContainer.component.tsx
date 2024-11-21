@@ -1,11 +1,10 @@
-import ImageContainer from '../common/imageContainer.component'
-import Favorite from '../common/favorite.component'
-import ProductDescrption from '../common/productDesc.component'
-import SKUColorBox from '../common/skuColorsBox.component'
-
 import { ProductDataType } from '@repo/types/types'
 import getDefaultSkuInfo from '@/utils/getDefaultSku'
 import getRedirectLink from '@/utils/getRedirectLink'
+import Favorite from '../atom/favorite.component'
+import ImageContainer from '../molecule/imageContainer.component'
+import ProductDescrption from '../molecule/productDesc.component'
+import SKUColorBox from '../molecule/skuColorsBox.component'
 
 type ProductContainerTypes = {
     productDetail: ProductDataType
