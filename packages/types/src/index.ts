@@ -46,3 +46,14 @@ export type PaginatedDataTypes = {
     page: { page: string; size: string; count: number }
     paginatedData: ProductDataType[]
 }
+
+//CartType
+type CartEntities = Pick<SkuInfoType, 'skuId' | 'skuColorName'>
+type CartSize = {
+    name: string
+    size: string
+    price: number
+    image: string
+    quantity: number
+}
+export type CartType = CartEntities & CartSize
