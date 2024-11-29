@@ -15,10 +15,12 @@
     "next": "14.2.6",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "sharp": "^0.33.5",
     "zustand": "^5.0.1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/types": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tanstack/eslint-plugin-query": "^5.59.20",
     "@types/node": "^20",
@@ -29,7 +31,6 @@
     "eslint-config-next": "14.2.6",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
-    "typescript": "^5",
-    "@repo/types":"workspace:*"
+    "typescript": "^5"
   }
 }

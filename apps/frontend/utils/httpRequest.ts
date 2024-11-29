@@ -14,3 +14,22 @@ export const makeGetRequest = async (requestURL: string) => {
         }
     }
 }
+
+export const makeMutationRequest = async (type: 'POST' | 'PATCH' | 'DELETE', requestURL: string, postBody: any) => {
+    try {
+        const data = await fetch(`${API_DOMAIN}${requestURL}`, {
+            method: type,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(postBody),
+        })
+        if (data.ok) {
+            return await data.json()
+        } else {
+            throw new Error('HTTP error!!1')
+        }
+    } catch (e) {
+        if (e instanceof Error) {
+            throw new Error('Something went wrong!!')
+        }
+    }
+}

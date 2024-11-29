@@ -16,6 +16,8 @@ import ProductDescrption from '../molecule/productDesc.component'
 import ReviewStar from '../molecule/reviewStar.component'
 import SelectSize from '../molecule/sizeSelection.component'
 import SKUSelection from '../molecule/skuSelect.component'
+import useCheckoutStore from '@/stores/checkout.store'
+import { useAddItemToCart } from '@/hooks/useCart'
 
 type ProductDescriptionTypes = {
     productId: string
@@ -24,6 +26,16 @@ type ProductDescriptionTypes = {
 const ProductDescription: React.FC<ProductDescriptionTypes> = ({ productId }) => {
     const { data: ProductInfo, status } = useProductInfo<ProductDataType>(productId)
     const { skuInfo, setSkuInfo } = useProductStore()
+    const { size } = useCheckoutStore()
+    const addToCart = useAddItemToCart({
+        name: ProductInfo?.name ?? '',
+        skuId: skuInfo?.skuId ?? '',
+        image: skuInfo?.images.mainImageSrc ?? '',
+        quantity: 1,
+        price: skuInfo?.skuPrice.salePrice ?? 0,
+        size: size,
+        skuColorName: skuInfo?.skuColorName ?? '',
+    })
 
     if (status === 'pending') return <h1>Loading...</h1>
     if (status === 'error') return <h1>Something went wrong!!</h1>
@@ -33,6 +45,9 @@ const ProductDescription: React.FC<ProductDescriptionTypes> = ({ productId }) =>
     }
     if (!skuInfo) return <h1>No SKU information available</h1>
 
+    const handleAddToCart = () => {
+        addToCart.mutate()
+    }
     return (
         <>
             <div className="md:flex flex-row-reverse w-full ">
@@ -52,7 +67,7 @@ const ProductDescription: React.FC<ProductDescriptionTypes> = ({ productId }) =>
                     <TextWithIcon text="Size Guide" className="underline py-4 text-sm">
                         <IconRuler2 stroke={1} width={20} height={20} />
                     </TextWithIcon>
-                    <CustomButton buttonText="Add" varient="BlackOne">
+                    <CustomButton buttonText="Add" varient="BlackOne" handleclickFn={handleAddToCart}>
                         <IconShoppingBag stroke={1} />
                     </CustomButton>
                     <div className="pt-4">
