@@ -17,6 +17,7 @@ module.exports = {
         fontGray: "#999898",
         footerGray: "#e4e4e4",
         hmMemberPriceColor: "#f1ebdf",
+        hmBackgroundColor: "#faf9f8"
       },
       fontSize: {
         sm: "0.7rem",

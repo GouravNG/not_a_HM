@@ -1,8 +1,8 @@
 const API_DOMAIN = process.env.NEXT_PUBLIC_API_DOMAIN ?? ''
 
-export const makeGetRequest = async (requestURL: string) => {
+export const makeGetRequest = async (requestURL: string, cacheProp: RequestCache = 'default') => {
     try {
-        const data = await fetch(`${API_DOMAIN}${requestURL}`)
+        const data = await fetch(`${API_DOMAIN}${requestURL}`, { cache: cacheProp })
         if (data.ok) {
             return await data.json()
         } else {
