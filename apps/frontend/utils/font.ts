@@ -1,3 +1,3 @@
-import { Quicksand } from "next/font/google"
+import { DM_Sans } from 'next/font/google'
 
-export const quicksand = Quicksand({ subsets: ["latin"], weight: ["600","700","500"] })
+export const dms = DM_Sans({ subsets: ['latin'], weight: ['600', '700', '500'] })

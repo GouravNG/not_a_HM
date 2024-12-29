@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { quicksand } from '../utils/font'
+import { dms } from '../utils/font'
 import TanStackProvider from '@/utils/tanstackProvider'
 import { AbsoluteContainer } from '@/components/molecule/absolute.component'
 import Footer from '@/components/templates/footer.component'
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${quicksand.className} antialiased relative`}>
+            <body className={`${dms.className} antialiased relative`}>
                 <TanStackProvider>
                     <AbsoluteContainer />
                     <Header />

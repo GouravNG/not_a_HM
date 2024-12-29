@@ -57,3 +57,13 @@ type CartSize = {
     quantity: number
 }
 export type CartType = CartEntities & CartSize
+
+//checout
+
+export type MyInformationFormTypes = {
+    email: string
+    firstName: string
+    lastName: string
+}
+
+export type MyInfoSavedState = Partial<MyInformationFormTypes>
