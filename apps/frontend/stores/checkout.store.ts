@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { MyInfoSavedState } from '@repo/types/types'
+import { BillingType, MyInfoSavedState, TCheckoutFormEditing } from '@repo/types/types'
 import { create } from 'zustand'
 
 type CheckoutStoreType = {
@@ -11,6 +11,10 @@ type CheckoutStoreType = {
     setMyInfo: (savedInfo: MyInfoSavedState) => void
     isEditing: boolean
     toggleIsEditing: () => void
+    BillingAddress: Partial<BillingType>
+    setBillingAddress: (savedBillingAddress: Partial<BillingType>) => void
+    isFormEditing: TCheckoutFormEditing
+    setFormEditing: (formName: keyof TCheckoutFormEditing) => void
 }
 
 const useCheckoutStore = create<CheckoutStoreType>((set) => ({
@@ -22,6 +26,16 @@ const useCheckoutStore = create<CheckoutStoreType>((set) => ({
     setMyInfo: (savedInfo) => set(() => ({ myInfo: savedInfo })),
     isEditing: false,
     toggleIsEditing: () => set((state) => ({ isEditing: !state.isEditing })),
+    BillingAddress: {},
+    setBillingAddress: (BillingAddress) => set(() => ({ BillingAddress: BillingAddress })),
+    isFormEditing: { myInformationForm: false, BillingAddressFrom: false },
+    setFormEditing: (formName) =>
+        set((state) => ({
+            isFormEditing: {
+                ...state.isFormEditing,
+                [formName]: !state.isFormEditing[formName],
+            },
+        })),
 }))
 
 export default useCheckoutStore
