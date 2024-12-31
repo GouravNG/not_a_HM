@@ -67,3 +67,16 @@ export type MyInformationFormTypes = {
 }
 
 export type MyInfoSavedState = Partial<MyInformationFormTypes>
+
+export type BillingType = {
+    addline: string
+    addline2?: string
+    townCity: string
+    pincode: number
+    state: string
+}
+
+export type TCheckoutFormEditing = {
+    myInformationForm: boolean
+    BillingAddressFrom: boolean
+}

@@ -19,7 +19,7 @@ const MyInformationForm = () => {
         } catch (e) {
             if (e instanceof Error) console.log(`${e.message}`)
         }
-    }, [myInfo])
+    }, [])
 
     const {
         register,
