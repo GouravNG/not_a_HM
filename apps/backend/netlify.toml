@@ -1,0 +1,16 @@
+[build]
+  command = "pnpm run build" # Adjust this based on your setup
+  publish = "public" # Set this if you have any frontend assets to serve, otherwise remove it
+
+[dev]
+  command = "pnpm run dev" # Ensure this starts your Hono server
+  port = 5000
+  targetPort = 5001 # Ensure it forwards requests to your actual backend port
+
+[[edge_functions]]
+  path = "/*"
+  function = "server"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

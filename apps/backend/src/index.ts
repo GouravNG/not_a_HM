@@ -16,7 +16,7 @@ import { addItemToDB, getCart, removeItemFromDB, updateItemFromDB } from './cont
 const allCategories: SubCategoryTypes = allCategoriesJSON
 export const allProducts: ProductDataType[] = allProductDataJSON
 
-const app = new Hono()
+export const app = new Hono()
 app.use('*', cors())
 app.use('*', prettyJSON())
 
