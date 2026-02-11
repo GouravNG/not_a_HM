@@ -5,6 +5,9 @@ import TanStackProvider from '@/utils/tanstackProvider'
 import { AbsoluteContainer } from '@/components/molecule/absolute.component'
 import Footer from '@/components/templates/footer.component'
 import Header from '@/components/templates/header.component'
+import { MSWProvider } from '@/components/msw-provider'
+
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
     title: 'H&M | Online Fashion',
@@ -19,12 +22,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${dms.className} antialiased relative`}>
-                <TanStackProvider>
-                    <AbsoluteContainer />
-                    <Header />
-                    <main>{children}</main>
-                    <Footer />
-                </TanStackProvider>
+                <MSWProvider>
+                    <TanStackProvider>
+                        <AbsoluteContainer />
+                        <Header />
+                        <main>{children}</main>
+                        <Footer />
+                    </TanStackProvider>
+                </MSWProvider>
             </body>
         </html>
     )
